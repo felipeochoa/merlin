@@ -1564,7 +1564,7 @@
 (alias (name runtest) (deps (alias type-expr-test)))
 
 (alias
- (name typer-cache-test)
+ (name typer-cache-test)(locks  ../server)
  (package merlin)
  (deps (:t ./test-dirs/typer-cache/test.t)
        (source_tree ./test-dirs/typer-cache)
